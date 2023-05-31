@@ -684,24 +684,220 @@
 #     print(word)
 
 
-numbers = [ 19, 3, 24, 7]
-file_open = "lesson.txt"
+# numbers = [ 19, 3, 24, 7]
+# file_open = "lesson.txt"
 
-with open(file_open, "w") as file:
-    for number in numbers:
-        file.write(str(number) + "\n")
+# with open(file_open, "w") as file:
+#     for number in numbers:
+#         file.write(str(number) + "\n")
 
-max_number = float("-inf")
-min_number = float("inf")
+# max_number = float("-inf")
+# min_number = float("inf")
 
-with open(file_open, "r") as file:
-    for line in file:
-        number = int(line.strip())
-        max_number = max(max_number, number)
-        min_number = min(min_number, number)
+# with open(file_open, "r") as file:
+#     for line in file:
+#         number = int(line.strip())
+#         max_number = max(max_number, number)
+#         min_number = min(min_number, number)
 
-output_file = "resul.txt"
+# output_file = "resul.txt"
 
-with open(output_file, "w") as file:
-    file.write("Максимальное число: " + str(max_number) + "\n")
-    file.write("Минимальное число: " + str(min_number) + "\n")
+# with open(output_file, "w") as file:
+#     file.write("Максимальное число: " + str(max_number) + "\n")
+#     file.write("Минимальное число: " + str(min_number) + "\n")
+
+
+# import time             
+# password = 123456
+# count = 3
+# loged_in = False
+
+# while count > 0:
+#     user_input = int(input("Введите пароль"))
+    
+#     if user_input == password:
+#         loged_in = True
+#         break
+#     else:
+#         count -= 1
+#         print("Неверный пароль.Повторите попытку")
+#         time.sleep(5) 
+# if loged_in:
+#     print("Вход выполнен") 
+# else:
+#     print("У вас не осталось попыток")
+
+
+
+# import math
+# print(math.ceil(4.3))
+# print(math.floor(4.3))
+# print(math.factorial(5))
+# print(math.sqrt(16))
+# num = int(input())
+# print(math.sin(num))
+
+
+
+# names = ["Aibek", "Joomart", "Adinai", "Ermek", "Atai", "Aslan", "Lyazat", "Salavat", "Daniyar", "Bolotbek", "Alymbek", "Dastan", "Maksat"]
+
+# import os
+# import random
+# import string
+
+# desktop_path = os.path.expanduser("~/Desktop")
+# directory_path = os.path.join(desktop_path, "my_directory")
+
+# if not os.path.exists(directory_path):
+#     os.makedirs(directory_path)
+    
+# for i in range(5):
+#     random_file = "".join(random.choices(string.ascii_letters, k=8)) + 'txt'
+#     file_path = os.path.join(directory_path, random_file)
+    
+# with open(file_path, 'w') as file:
+#     file.write("Это рандомный файл")
+
+
+
+# import sys
+
+# value1 = input(111)
+# value2 = input(222)
+
+# res1 = sys.getsizeof(value1)
+# res2 = sys.getsizeof(value2)
+
+# if res1 > res2:
+#     print("Первый объект занимает больше места чем второй")
+# elif res2 > res1:
+#     print("Второй объект занимает больше места чем первый")
+# else:
+#     print("Они ровны")
+
+
+
+# import random
+# import string
+
+# def generate_password(length):
+#     characters = string.ascii_letters + string.digits
+#     password = ''.join(random.choice(characters) for _ in range(length))
+#     return password
+
+# N = int(input("Введите длину пароля: "))
+
+# password = generate_password(N)
+# print("Сгенерированный пароль:", password)
+
+
+# import datetime
+
+# current_date = datetime.date.today()
+
+# future_date = current_date + datetime.timedelta(days=10000)
+
+# print("Дата через 10000 дней:", future_date)
+
+
+
+# destination
+
+
+
+     # def num_summ(a, b):
+#     print(a + b)
+
+# a = 14
+# b = 15
+# result = num_summ(a, b)
+# my_list = [1, 'mario', 3.5]:
+
+
+           
+# def length():
+#     result = 0
+#     for i in my_list:
+#         result += 1
+#     print(f"список состоит из {result} элементов")
+# length()
+
+
+
+# def split_and_reversed(lst):
+#     middle = len(lst) // 2
+
+#     left_half = lst[:middle][::-1]
+#     right_half = lst[middle:][::-1]
+
+#     reversed_list = left_half + right_half
+
+#     return reversed_list
+
+# list_1 = ['name', 'age', '1', '19']
+# modifidet_list = split_and_reversed(list_1)
+
+# print("Оргинальный лист-", list_1)
+# print("измененый лист-", modifidet_list)
+
+
+
+
+# def chat_bot():
+#     while True:
+#        a = input()
+#        if a.upper() == a:
+#         print("Введите слово")
+#        elif "?" in a:
+#         print("Конечно")
+#        elif a == "":
+#         print("Как классно, когда ты молчишь. Продолжай в том же духе!") 
+#        else:
+#         print("Ну и что") 
+
+# chat_bot()
+
+
+
+
+
+# def sum(a, b):
+#      return a + b
+# a = 14
+# b = 15
+# c = sum(15, 14)
+
+
+
+# def dif(a, b):
+#      return a - b
+# a = 14
+# b = 15
+# c = min(a, b)
+
+# def wer(a, d):
+#      c = sum(a, b)
+#      d = sum(a, b)
+#      return c, d
+
+# a = 14
+# b = 15
+# c = wer(a, b)
+# print(a, b)
+
+
+
+import random
+
+def get_number():
+    code = '0444'
+    number = code
+    
+    for i in range(6):
+        digit = random.choice(['1','4', '5', '7', '9', '0'])  
+        number += digit
+    return number
+
+phone_number = get_number() 
+
+print("Сгенерированный номер", phone_number)
