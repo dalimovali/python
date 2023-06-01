@@ -280,7 +280,6 @@
 
 
 # a = (1, 2, 3)
-# print(a[0])
 # print(a[2])
 # print(a[2])
 
@@ -887,17 +886,185 @@
 
 
 
-import random
+# import random
 
-def get_number():
-    code = '0444'
-    number = code
+# def get_number():
+#     code = '0444'
+#     number = code
     
-    for i in range(6):
-        digit = random.choice(['1','4', '5', '7', '9', '0'])  
-        number += digit
-    return number
+#     for i in range(6):
+#         digit = random.choice(['1','4', '5', '7', '9', '0'])  
+#         number += digit
+#     return number
 
-phone_number = get_number() 
+# phone_number = get_number() 
 
-print("Сгенерированный номер", phone_number)
+# print("Сгенерированный номер", phone_number)
+
+
+
+# def main():
+#     result = 9 + 7
+#     print(result)
+# main()
+
+
+
+# def summ (*args):
+    # return sum(args)
+# print(summ(1, 6, 3, 23, 5))
+
+
+
+# def info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}:{value}")
+# info(name = "ffe", age = 23)
+
+
+
+# def add(a, b):
+#     return a + b
+# print(add(1, 1))
+
+# def substract(a, b):
+#     return a - b
+# print(substract(2, 1))
+
+# def multiply (a, b):
+#     return a * b
+# print(multiply(5, 5))
+
+# def divide (a, b):
+#     return a // b
+# print(divide(1000, 1000))
+
+
+# def divide (a):
+#     reys = 0
+#     for i in a:
+#         reys += 1
+#     print(f"Предложение состоит из {res} элементов")
+#     return a
+# print(divide("one piace is real!!"))
+
+
+
+
+
+# import os
+# def menu ():
+#     food = input()
+#     drink = input()
+
+#     desktoob_path = os.path.join(os.path.expanduser('~'),"Deskto")
+#     file__path = os.path.join(desktoob_path, "menu.txt")
+
+#     with open(file__path, "w") as file:
+#         file.write(f"Ваш заказ: {food}, {drink}")
+
+# menu()
+
+# def dir(word):
+#     our_dir = os.getcwd()
+
+#     file_path = os.path.join(our_dir, f"{word}.py")
+
+#     with open(file_path, "w") as file:
+#         file.write("")
+
+# word = input()
+# dir(word)
+
+
+
+
+
+
+# def dictionary_split(dictionary):
+#     keys = tuple(dictionary.keys())
+#     values = tuple(dictionary.values())
+#     return keys, values
+    
+# dictionary = {"name": "David", "age": 25, "place":"New york"}
+
+# keyss, valuess = dictionary_split(dictionary)    
+# print(f"Ключи - {keyss}")
+# print(f"Значения - {valuess}")
+
+
+
+
+# def count():
+#     num = int(input())
+#     for i in range(num):
+#         print(num)
+# count()
+
+
+
+# def data(name, salary=5000):
+#     return f"{name} - {salary}"
+
+# name = "devid"
+# salariy = 10000
+# result = data(name, salariy) 
+# print(result)
+
+
+
+
+# lst1, lst2 = list(input()), list(input()) 
+# for el1 in lst1: 
+#  if el1 in lst2: 
+#   lst2.remove(el1) 
+# print(*lst2)
+
+# def generate_list(): 
+#     num = int(input()) 
+#     my_list = [] 
+#     for i in range(1, num+1): 
+#         my_list.append(i)
+#     return my_list 
+        
+# print (generate_list())
+
+
+
+# import sys
+
+# value1 = input()
+# value2 = input()
+
+# res1 = sys.getsizeof(value1)
+# res2 = sys.getsizeof(value2)
+
+# if res1 > res2:
+#     print("Первый объект занимает больше места чем второй")
+# elif res2 > res1:
+#     print("Второй объект занимает больше места чем первый")
+# else:
+#     print("Они ровны")
+
+
+
+
+# items = [4, 7, 2,  9, 9, 2, 4, 5, 6, 7,]
+# items = list(set(items))
+# items.sortа
+# print(items)
+
+
+# NUMBERS = [1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
+
+# for i in range(len(NUMBERS) - 1):
+#     num1 = NUMBERS[i]
+#     num2 = NUMBERS[i + 1]
+#     sum = num1 + num2
+#     print(f"Сумма чисел {num1} и {num2}: {sum}")
+
+
+# from time import sleep
+# for i in range(10):
+#     print(i)
+#     sleep(5)
