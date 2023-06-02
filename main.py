@@ -1068,3 +1068,105 @@
 # for i in range(10):
 #     print(i)
 #     sleep(5)
+
+
+
+
+
+# import os 
+# import shutil
+
+# def register():
+#     login = input("Введите логин: ")
+#     password = input("Введите пароль: ")
+#     photo_path = input("Введитие путь до фото: ")
+    
+#     if os.path.exists(photo_path):
+#         _,photo_split = os.path.splitext(photo_path)
+#         valid_photo_split = ['.jpeg', '.jpg', '.png']
+        
+#         if photo_split.lower() in valid_photo_split:
+#             photo = f"registred_foto/{login}{photo_split}"   
+            
+#             shutil.copyfile(photo_path, photo)
+            
+#             with open("database.txt", 'a') as file:
+#                 file.write(f"{login}:{password}:{photo}\n")
+#             print("Регистрация успешна завершена")
+        
+#         else:
+#             print("Неподдерживаемое расширение фотографии. Регистрация отменена")
+#     else:
+#         print("Фото не найдено. Регистрация отменена")        
+        
+# os.makedirs('registred_foto', exist_ok=True)
+
+# register()
+
+
+# def orifmetic (num1, num2, orifmetic):
+#     num1 = int(input("Введите первое число : "))
+#     num2 = int(input("Введите второе чиcло : "))
+#     orifmetic = input("Введите знак (+, -) : ")
+#     if orifmetic == "+" :
+#         return(num1 + num2)
+#     elif orifmetic == "-" :
+#         return(num2 - orifmetic)
+#     elif orifmetic == "*"
+#         return (num2 * num1)
+#     elif orifmetic == "/" and
+#         return (orifmetic / num1)
+#     else:
+#         return ("nvalid operation")
+
+# orifmetic(num1, num2, orifmetic)
+
+
+# def arithmetic():
+#     num1 = int(input("Введите первое число :"))
+#     operator = input("Введите знак (+, -):")
+#     num2 = int(input("Введите второе чиcло :"))
+#     if operator == "+" :
+#         return num1 + num2
+#     elif operator == "-":
+#         return num1 - num2
+#     elif operator == "*":
+#         return num1 * num2
+#     elif operator == "/":
+#         return num1 / num2
+#     else :
+#         return ("не известное операцыя")
+# print(arithmetic())
+
+
+
+
+# import math
+# def sqr(a):
+#     p = a * 4 
+#     s = a * 2
+#     d = 2*a**2
+#     d2 = math.sqrt(d)
+#     print(f"Периметр - {p}. Площадь - {s}. Диагональ - {round(d2, 1)}")
+
+# a = int(input())
+# sqr(a)
+
+
+
+# import os
+# import shutil
+
+# def image():
+#     image1 = input()
+#     image2 = input()
+
+#     if os.path.exists(image1):
+#         shutil.copyfile(image1, image2)
+#     else:
+#         if not os.path.exists(image1):
+#             print(f"Файл {image1} Отсутствуе")
+#         if not os.path.exists(image2):
+#             print(f"Файл {image2} Отсутствуе")
+
+# image()
